@@ -35,7 +35,7 @@
 /client/verb/checkachievements()
 	set category = "OOC"
 	set name = "Check achievements"
-	set desc = "See all of your achivements"
+	set desc = "See all of your achievements"
 
 	if(!SSachievements.initialized)
 		to_chat(src, "<span class='warning'>SSachievements has not initialized yet, please wait.</span>")

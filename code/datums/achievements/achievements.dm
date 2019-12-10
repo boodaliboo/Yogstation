@@ -93,3 +93,8 @@
 	desc = "Get cremated... alive"
 	id = 17
 	hidden = TRUE
+
+/datum/achievement/leap
+	name = "Leap Day"
+	desc = "Play any role or character from round-start on February 29th"
+	id = 21

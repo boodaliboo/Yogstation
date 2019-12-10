@@ -568,7 +568,7 @@
 
 	if(changelingwin)
 		parts += "<span class='greentext'>The changeling was successful!</span>"
-		SSachievements.unlock_achievement(/datum/achievement/changelingwin, owner.current.client) //changeling wins, give achivement
+		SSachievements.unlock_achievement(/datum/achievement/changelingwin, owner.current.client) //changeling wins, give achievement
 	else
 		parts += "<span class='redtext'>The changeling has failed.</span>"
 

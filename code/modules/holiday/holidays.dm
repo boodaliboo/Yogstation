@@ -11,6 +11,8 @@
 	var/current_year = 0
 	var/year_offset = 0
 	var/obj/item/drone_hat //If this is defined, drones without a default hat will spawn with this one during the holiday; check drones_as_items.dm to see this used
+	var/list/lobby_music = null // list of youtube URLs for lobby music to use during this holiday
+	var/achievement = null
 
 // This proc gets run before the game starts when the holiday is activated. Do festive shit here.
 /datum/holiday/proc/celebrate()
@@ -140,6 +142,7 @@
 	name = "Leap Day"
 	begin_day = 29
 	begin_month = FEBRUARY
+	achievement = /datum/achievement/leap
 
 /datum/holiday/pi
 	name = "Pi Day"
@@ -179,6 +182,12 @@
 	begin_day = 12
 	begin_month = APRIL
 	drone_hat = /obj/item/clothing/head/syndicatefake
+	lobby_music = list(
+		"https://www.youtube.com/watch?v=sOM4MpN-ju0", // Glory to those who look forward
+		"https://www.youtube.com/watch?v=ncx4x8rvrQU", // cosmonaut anthem
+		"https://www.youtube.com/watch?v=KUwN_QaZnEE", // Before the long journey
+		"https://www.youtube.com/watch?v=ckNIMPQoBPw" // And on mars there will be apple blossoms
+		)
 
 /datum/holiday/spess/greet()
 	return "On this day over 600 years ago, Comrade Yuri Gagarin first ventured into space!"
@@ -209,6 +218,12 @@
 	begin_day = 1
 	begin_month = MAY
 	drone_hat = /obj/item/clothing/head/hardhat
+	lobby_music = list(
+		"https://www.youtube.com/watch?v=UXKr4HSPHT8", // Internationale - german
+		"https://www.youtube.com/watch?v=t8EMx7Y16Vo", // Internationale - russian
+		"https://www.youtube.com/watch?v=lyfhs42mdyA", // Internationale - japanese
+		"https://www.youtube.com/watch?v=5DTbashsKic" // Internationale - english
+		)
 
 /datum/holiday/firefighter
 	name = "Firefighter's Day"
@@ -258,8 +273,21 @@
 		"https://www.youtube.com/watch?v=9Cyokaj3BJU", // alabama
 		"https://www.youtube.com/watch?v=1vrEljMfXYo" // country roads
 	)
+
 /datum/holiday/USA/getStationPrefix()
 	return pick("Independent","American","Burger","Bald Eagle","Star-Spangled", "Fireworks")
+
+/datum/holiday/oakday
+	name = "Oak's Birthday"
+	begin_day = 5
+	begin_month = JULY
+	drone_hat = /obj/item/clothing/head/hardhat/cakehat
+
+/datum/holiday/oakday/getStationPrefix()
+	return pick("Gondola","Finnish","Council")
+	
+/datum/holiday/oakday/greet()
+	return "Happy birthday to Oakboscage!"
 
 /datum/holiday/writer
 	name = "Writer's Day"
@@ -370,6 +398,15 @@
 	begin_day = 6
 	begin_month = NOVEMBER
 	end_day = 7
+	lobby_music = list(
+		"https://www.youtube.com/watch?v=U06jlgpMtQs", // the USSR anthem
+		"https://www.youtube.com/watch?v=x2YlbiyiuMc", // Polyushka Polye
+		"https://www.youtube.com/watch?v=cW38y4AFGyI", // Let's Go
+		"https://www.youtube.com/watch?v=zgKazTrhXmI", // Red Army is the Strongest
+		"https://www.youtube.com/watch?v=Q_iIeFWJszY", // Shchors' Song
+		"https://www.youtube.com/watch?v=maYCStVzjDs",  // Sacred War
+		"https://www.youtube.com/watch?v=LYo9mIo54Vs" // Red Alert 3 theme
+		)
 
 /datum/holiday/october_revolution/getStationPrefix()
 	return pick("Communist", "Soviet", "Bolshevik", "Socialist", "Red", "Workers'")

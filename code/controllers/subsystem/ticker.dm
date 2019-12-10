@@ -301,6 +301,7 @@ SUBSYSTEM_DEF(ticker)
 		for(var/holidayname in SSevents.holidays)
 			var/datum/holiday/holiday = SSevents.holidays[holidayname]
 			to_chat(world, "<h4>[holiday.greet()]</h4>")
+			handle_holiday_achievement(holiday)
 
 	PostSetup()
 
@@ -675,3 +676,8 @@ SUBSYSTEM_DEF(ticker)
 
 	SEND_SOUND(world, sound(round_end_sound))
 	text2file(login_music, "data/last_round_lobby_music.txt")
+
+/datum/controller/subsystem/ticker/proc/handle_holiday_achievement(var/datum/holiday/H)
+	if(H.achievement && istype(H.achievement, /datum/achievement))
+		for(var/mob/M in GLOB.player_list)
+			SSachievements.unlock_achievement(H.achievement, M.client)
