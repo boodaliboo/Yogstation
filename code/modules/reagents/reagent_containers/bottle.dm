@@ -278,6 +278,11 @@
 	desc = "A small bottle. Contains a small dosage of Fukkos Miracos."
 	spawned_disease = /datum/disease/magnitis
 
+/obj/item/reagent_containers/glass/bottle/youth
+	name = "Bottle of Eternal Youth Extract"
+	desc = "A small bottle. Contains a small ammount of extracted liquid from the fountain of youth."
+	spawned_disease = /datum/disease/advance/eternal
+
 /obj/item/reagent_containers/glass/bottle/wizarditis
 	name = "Wizarditis culture bottle"
 	desc = "A small bottle. Contains a sample of Rincewindus Vulgaris."
