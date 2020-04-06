@@ -16,6 +16,15 @@
 	symptoms = list(new/datum/symptom/cough)
 	..()
 
+// Eternal Youth
+/datum/disease/advance/eternal
+	copy_type = /datum/disease/advance
+
+/datum/disease/advance/eternal/New()
+	name = "Eternal Youth"
+	symptoms = list(/datum/symptom/youthe)
+	..()
+
 //Randomly generated Disease, for virus crates and events
 /datum/disease/advance/random
 	name = "Experimental Disease"
