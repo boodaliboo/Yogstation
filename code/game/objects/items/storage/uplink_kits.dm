@@ -576,3 +576,39 @@
 /obj/item/storage/box/syndie_kit/bee_grenades/PopulateContents()
 	for(var/i in 1 to 3)
 		new /obj/item/grenade/spawnergrenade/buzzkill(src)
+
+/obj/item/storage/box/syndicate/indianjones/PopulateContents()
+	switch (pickweight(list("egyptian" = 2, "clergy" = 3, "alien" = 2, "aztec" = 2,  "metaops" = 1)))
+	if("egyptian")
+			new /obj/item/nullrod/egyptian // ~8 tc?
+			new /obj/item/book/granter/spell/snake // ~8 tc?
+			new /obj/item/clothing/head/pharaoh
+	if("clergy")
+			new /obj/item/claymore // ~8 tc?
+			new /obj/item/clothing/head/helmet/chaplain(src)
+			new /obj/item/clothing/suit/armor/riot/chaplain(src)
+
+
+
+/obj/effect/proc_holder/spell/aoe_turf/conjure/snake
+	name = "Conjure Snakes"
+	desc = "This spell lets you reach into the realm of snakes"
+	school = "snake"
+	charge_max = 600
+	clothes_req = FALSE
+	antimagic_allowed = TRUE
+	invocation = "Come my reptilian brothers"
+	invocation_type = "shout"
+	range = 3
+	cooldown_min = 50
+
+	summon_type = list("/mob/living/simple_animal/hostile/retaliate/poison/snake")
+	summon_lifespan = 0
+	summon_amt = 1
+
+/obj/item/book/granter/spell/snake
+	spell = /obj/effect/proc_holder/spell/aoe_turf/conjure/snakee
+	spellname = "Conjure Snake"
+	icon_state ="booksummons"
+	desc = "Learn the magics of the ancient egyptians"
+	remarks = list("I hope this doesnt give me scales...", "I wonder what species these snakes are...", "I hope these snakes arent harmful to me...", "I hope this doesnt kill me...")
