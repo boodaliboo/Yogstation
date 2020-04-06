@@ -22,7 +22,7 @@
 
 /datum/disease/advance/eternal/New()
 	name = "Eternal Youth"
-	symptoms = list(/datum/symptom/youthe)
+	symptoms = list(/datum/symptom/youth)
 	..()
 
 //Randomly generated Disease, for virus crates and events
