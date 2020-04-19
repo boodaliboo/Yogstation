@@ -578,15 +578,21 @@
 		new /obj/item/grenade/spawnergrenade/buzzkill(src)
 
 /obj/item/storage/box/syndicate/indianjones/PopulateContents()
-	switch (pickweight(list("egyptian" = 2, "clergy" = 3, "alien" = 2, "aztec" = 2,  "metaops" = 1)))
+	switch (pickweight(list("egyptian" = 2, "clergy" = 3, "alien" = 1, "aztec" = 2,  "metaops" = 1)))
 	if("egyptian")
-			new /obj/item/nullrod/egyptian // ~8 tc?
-			new /obj/item/book/granter/spell/snake // ~8 tc?
+			new /obj/item/nullrod/egyptian // egytr
+			new /obj/item/book/granter/spell/snake // ssssssss?
 			new /obj/item/clothing/head/pharaoh
 	if("clergy")
-			new /obj/item/claymore // ~8 tc?
+			new /obj/item/claymore // sword
 			new /obj/item/clothing/head/helmet/chaplain(src)
 			new /obj/item/clothing/suit/armor/riot/chaplain(src)
+			new /obj/item/reagent_containers/glass/bottle/youth // like the eternal youth chalice from indiana jones
+	if("alien")	
+			new /obj/item/clothing/under/abductor // i really dont know what to put for this
+			new /obj/item/gun/energy/decloner // it seems alien enough
+			new /obj/item/organ/heart/gland
+			new /obj/item/melee/synthetic_arm_blade // changelings are alien
 
 
 
