@@ -678,3 +678,19 @@
 	list_reagents = list(/datum/reagent/consumable/nutriment = 5, /datum/reagent/unstablemutationtoxin = 6, /datum/reagent/consumable/nutriment/vitamin = 5)
 	tastes = list("tomato" = 1,)
 	foodtype = VEGETABLES
+	
+/obj/item/clothing/head/pharaoh
+	name = "pharaoh hat"
+	desc = "Walk like an Egyptian."
+	icon_state = "pharoah_hat"
+	icon_state = "pharoah_hat"
+	
+/obj/item/clothing/head/pharaoh/equipped(mob/living/carbon/human/user, slot)
+	..()
+	if (slot == SLOT_HEAD)
+		user.faction |= "snake"
+
+/obj/item/clothing/head/pharaoh/dropped(mob/living/carbon/human/user)
+	..()
+	if (user.head == src)
+		user.faction -= "snake"
