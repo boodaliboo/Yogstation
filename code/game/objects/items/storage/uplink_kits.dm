@@ -598,11 +598,12 @@
 			new	/obj/item/clothing/mask/rat/tribal
 			new /obj/item/clothing/suit/armor/bone
 	if("adventurer")
-			new
+			new /obj/item/gun/ballistic/revolver/45
+			new /obj/item/ammo_box/magazine/internal/cylinder/45
+			new /obj/item/ammo_box/magazine/internal/cylinder/45
 			
 			
-			
-/obj/item/gun/ballistic/revolver/nagant
+/obj/item/gun/ballistic/revolver/45
 	name = "\improper .45 Revolver"
 	desc = "An old model of revolver that originated in Unite States. Able to be suppressed. Uses .45mm ammo."
 	icon_state = "revolver"
