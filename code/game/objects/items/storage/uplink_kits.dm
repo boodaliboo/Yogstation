@@ -673,7 +673,7 @@
 	
 /obj/item/reagent_containers/food/snacks/pizzaslice/goredem
 	name = "Goredem Fruit"
-	desc = "A much sought after fruit from a time long past"
+	desc = "A much sought after fruit from a time long past, its effects are heard to be "transformative""
 	icon_state = "lime"
 	list_reagents = list(/datum/reagent/consumable/nutriment = 5, /datum/reagent/unstablemutationtoxin = 6, /datum/reagent/consumable/nutriment/vitamin = 5)
 	tastes = list("tomato" = 1,)
