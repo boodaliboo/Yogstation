@@ -97,3 +97,14 @@
 	
 /obj/item/autosurgeon/medibeam
 	starting_organ = /obj/item/organ/cyberimp/arm/medibeam
+	
+/obj/item/autosurgeon/spinner
+	starting_organ = /obj/item/organ/alien/resinspinner
+	
+/obj/item/autosurgeon/node
+	starting_organ = /obj/item/organ/alien/hivenode
+	
+/obj/item/autosurgeon/plasmavessel
+	starting_organ = /obj/item/organ/alien/plasmavessel
+	
+
