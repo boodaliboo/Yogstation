@@ -578,7 +578,7 @@
 		new /obj/item/grenade/spawnergrenade/buzzkill(src)
 
 /obj/item/storage/box/syndicate/indianjones/PopulateContents()
-	switch (pickweight(list("egyptian" = 1, "clergy" = 2, "alien" = 1, "aztec" = 2,  "adventurer" = 2)))
+	switch (pickweight(list("egyptian" = 1, "clergy" = 2, "alien" = 1, "atlantis" = 1,  "adventurer" = 2)))
 	if("egyptian")
 			new /obj/item/gun/magic/staff/Snake
 			new /obj/item/melee/chainofcommand/tailwhip
@@ -591,15 +591,18 @@
 			new /obj/item/reagent_containers/glass/bottle/youth // like the eternal youth chalice from indiana jones
 	
 	if("alien")	
-			new /obj/item/clothing/under/abductor // i really dont know what to put for this
-			new /obj/item/gun/energy/decloner // it seems alien enough
-			new /obj/item/organ/heart/gland
-			new /obj/item/storage/backpack/holding // should i give a random auto surgeon for a alien organ?
+			new /obj/item/autosurgeon/node
+			new /obj/item/autosurgeon/spinner
+			new /obj/item/autosurgeon/plasmavessel
+			new /obj/item/clothing/mask/facehugger/toy
+			new /obj/item/clothing/mask/facehugger/toy
+			new /obj/item/clothing/mask/facehugger/toy
+
 	
-	if("aztec")
-			new /obj/item/kitchen/knife/bloodletter // hoping to get a actual custom weapon and sprite for this going to get a sprite and base the effects off that but this will do for now
-			new	/obj/item/clothing/mask/rat/tribal
-			new /obj/item/clothing/suit/armor/bone
+	if("atlantis")
+			new /obj/item/twohanded/pitchfork/trident
+			new	/obj/item/book/granter/spell/summonitem
+			new /obj/item/guardiancreator/carp
 	
 	if("adventurer")
 			new /obj/item/gun/ballistic/revolver/45
