@@ -597,6 +597,7 @@
 			new /obj/item/clothing/mask/facehugger/toy
 			new /obj/item/clothing/mask/facehugger/toy
 			new /obj/item/clothing/mask/facehugger/toy
+			new /obj/item/clothing/suit/space/hardsuit/xenos
 
 	
 	if("atlantis")
@@ -607,6 +608,11 @@
 	if("adventurer")
 			new /obj/item/gun/ballistic/revolver/45
 			new /obj/item/ammo_box/magazine/internal/cylinder/45
+			new /obj/item/ammo_box/magazine/internal/cylinder/45
+			new /obj/item/ammo_box/magazine/internal/cylinder/45
+			new /obj/item/kitchen/knife/combat/adventurer
+			new /obj/item/reagent_containers/hypospray/medipen/survival
+			new /obj/item/reagent_containers/hypospray/medipen/survival
 			new /obj/item/reagent_containers/food/snacks/pizzaslice/goredem
 			
 			
@@ -697,3 +703,32 @@
 	..()
 	if (user.head == src)
 		user.faction -= "snake"
+
+/obj/item/clothing/suit/space/hardsuit/xenos
+	name = "xenos spacesuit"
+	desc = "A suit made out of chitinous alien hide."
+	icon_state = "xenos"
+	item_state = "xenos_helm"
+	armor = list("melee" = 30, "bullet" = 5, "laser" = 10, "energy" = 5, "bomb" = 10, "bio" = 100, "rad" = 25, "fire" = 60, "acid" = 75)
+	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS					//Uncomment to enable firesuit protection
+	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
+	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/xenos
+	
+/obj/item/clothing/head/helmet/space/hardsuit/xenos
+	name = "xenos spacehelmet"
+	desc = "A special helmet designed for work in a hazardous, low-pressure environment. Has thermal shielding."
+	icon_state = "xenos"
+	item_state = "xenos_helm"
+	armor = list("melee" = 30, "bullet" = 5, "laser" = 10, "energy" = 5, "bomb" = 10, "bio" = 100, "rad" = 25, "fire" = 60, "acid" = 75)
+	heat_protection = HEAD												//Uncomment to enable firesuit protection
+	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
+	
+/obj/item/kitchen/knife/combat/adventurer
+	name = "adventurers knife"
+	icon_state = "survivalknife"
+	embedding = list("embedded_pain_multiplier" = 4, "embed_chance" = 35, "embedded_fall_chance" = 10)
+	desc = "A hunting grade survival knife."
+	force = 21
+	throwforce = 27
+	bayonet = TRUE
+
