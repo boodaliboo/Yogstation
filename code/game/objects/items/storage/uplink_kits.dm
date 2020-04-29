@@ -583,20 +583,24 @@
 			new /obj/item/gun/magic/staff/Snake
 			new /obj/item/melee/chainofcommand/tailwhip
 			new /obj/item/clothing/head/pharaoh
+	
 	if("clergy")
 			new /obj/item/claymore // sword
 			new /obj/item/clothing/head/helmet/chaplain(src)
 			new /obj/item/clothing/suit/armor/riot/chaplain(src)
 			new /obj/item/reagent_containers/glass/bottle/youth // like the eternal youth chalice from indiana jones
+	
 	if("alien")	
 			new /obj/item/clothing/under/abductor // i really dont know what to put for this
 			new /obj/item/gun/energy/decloner // it seems alien enough
 			new /obj/item/organ/heart/gland
 			new /obj/item/storage/backpack/holding // should i give a random auto surgeon for a alien organ?
+	
 	if("aztec")
 			new /obj/item/kitchen/knife/bloodletter // hoping to get a actual custom weapon and sprite for this going to get a sprite and base the effects off that but this will do for now
 			new	/obj/item/clothing/mask/rat/tribal
 			new /obj/item/clothing/suit/armor/bone
+	
 	if("adventurer")
 			new /obj/item/gun/ballistic/revolver/45
 			new /obj/item/ammo_box/magazine/internal/cylinder/45
