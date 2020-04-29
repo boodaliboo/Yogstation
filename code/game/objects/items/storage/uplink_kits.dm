@@ -600,7 +600,8 @@
 	if("adventurer")
 			new /obj/item/gun/ballistic/revolver/45
 			new /obj/item/ammo_box/magazine/internal/cylinder/45
-			new /obj/item/ammo_box/magazine/internal/cylinder/45
+			new /obj/item/reagent_containers/food/snacks/pizzaslice/goredem
+			
 			
 			
 /obj/item/gun/ballistic/revolver/45
@@ -651,5 +652,25 @@
 	item_state = "pharoah_sceptre"
 	actions_types = list(/obj/effect/proc_holder/spell/aoe_turf/conjure/snake) //will this work who knows
 	
-
-
+/datum/reagent/unstablemutationtoxin	//For some reason the TG Menace seems to have deleted this one :(
+	name = "Unstable Mutation Toxin"	//Also putting this in the hippie tree so that we don't get fucked by TG messing with the reagents again
+	description = "A corruptive toxin... it seems to bubble and froth unpredictably. Are you sure you want to be around this for long?"
+	color = "#a872e6" // rgb: 168, 114, 230
+	metabolization_rate = INFINITY
+	taste_description = "fizzy slime"
+	can_synth = TRUE //thanks hippie for this code
+	
+/datum/reagent/unstablemutationtoxin/on_mob_metabolize(mob/living/carbon/human/H)
+	..()
+	if(!istype(H))
+		return
+	H.reagents.add_reagent(pick("stablemutationtoxin","lizardmutationtoxin","flymutationtoxin", "mothmutationtoxin", "podmutationtoxin", "jellymutationtoxin", "golemmutationtoxin", "abductormutationtoxin", "androidmutationtoxin", "skeletonmutationtoxin", "zombiemutationtoxin", "ashmutationtoxin", "shadowmutationtoxin"), 1) //No plasmaman 4u xDDD
+	return
+	
+/obj/item/reagent_containers/food/snacks/pizzaslice/goredem
+	name = "Goredem Fruit"
+	desc = "A much sought after fruit from a time long past"
+	icon_state = "lime"
+	list_reagents = list(/datum/reagent/consumable/nutriment = 5, /datum/reagent/unstablemutationtoxin = 6, /datum/reagent/consumable/nutriment/vitamin = 5)
+	tastes = list("tomato" = 1,)
+	foodtype = VEGETABLES
