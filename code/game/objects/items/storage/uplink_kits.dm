@@ -580,8 +580,8 @@
 /obj/item/storage/box/syndicate/indianjones/PopulateContents()
 	switch (pickweight(list("egyptian" = 1, "clergy" = 2, "alien" = 1, "aztec" = 2,  "adventurer" = 2)))
 	if("egyptian")
-			new /obj/item/nullrod/egyptian // egytr
-			new /obj/item/book/granter/spell/snake // ssssssss?
+			new /obj/item/gun/magic/staff/Snake
+			new /obj/item/melee/chainofcommand/tailwhip
 			new /obj/item/clothing/head/pharaoh
 	if("clergy")
 			new /obj/item/claymore // sword
@@ -592,13 +592,29 @@
 			new /obj/item/clothing/under/abductor // i really dont know what to put for this
 			new /obj/item/gun/energy/decloner // it seems alien enough
 			new /obj/item/organ/heart/gland
-			new /obj/item/storage/backpack/holding
+			new /obj/item/storage/backpack/holding // should i give a random auto surgeon for a alien organ?
 	if("aztec")
-			new /obj/item/kitchen/knife/bloodletter
+			new /obj/item/kitchen/knife/bloodletter // hoping to get a actual custom weapon and sprite for this going to get a sprite and base the effects off that but this will do for now
 			new	/obj/item/clothing/mask/rat/tribal
 			new /obj/item/clothing/suit/armor/bone
+	if("adventurer")
+			new
 			
+			
+			
+/obj/item/gun/ballistic/revolver/nagant
+	name = "\improper .45 Revolver"
+	desc = "An old model of revolver that originated in Unite States. Able to be suppressed. Uses .45mm ammo."
+	icon_state = "revolver"
+	can_suppress = TRUE
 
+	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/45
+
+/obj/item/ammo_box/magazine/internal/cylinder/45
+	name = "\improper Nagant revolver cylinder"
+	ammo_type = /obj/item/ammo_casing/c45
+	caliber = ".45"
+	max_ammo = 6
 
 
 /obj/effect/proc_holder/spell/aoe_turf/conjure/snake
@@ -615,11 +631,24 @@
 
 	summon_type = list("/mob/living/simple_animal/hostile/retaliate/poison/snake")
 	summon_lifespan = 0
-	summon_amt = 1
+	summon_amt = 2
 
 /obj/item/book/granter/spell/snake
 	spell = /obj/effect/proc_holder/spell/aoe_turf/conjure/snakee
 	spellname = "Conjure Snake"
 	icon_state ="booksummons"
 	desc = "Learn the magics of the ancient egyptians"
-	remarks = list("I hope this doesnt give me scales...", "I wonder what species these snakes are...", "I hope these snakes arent harmful to me...", "I hope this doesnt kill me...")
+	remarks = list("I hope this doesnt give me scales...", "I wonder what species these snakes are...", "I hope these snakes arent harmful to me...", "I hope this doesnt kill me...") // for future use or admemes
+
+/obj/item/ammo_casing/magic/snake
+	projectile_type = /obj/item/projectile/magic/wipe	
+
+/obj/item/gun/magic/staff/Snake
+	name = "Egyptian Staff of Summoning"
+	desc = "An artifact that summons snakes from the ethereal realm."
+	icon_state = "pharoah_sceptre"
+	item_state = "pharoah_sceptre"
+	actions_types = list(/obj/effect/proc_holder/spell/aoe_turf/conjure/snake) //will this work who knows
+	
+
+
