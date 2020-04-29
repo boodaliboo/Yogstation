@@ -578,7 +578,7 @@
 		new /obj/item/grenade/spawnergrenade/buzzkill(src)
 
 /obj/item/storage/box/syndicate/indianjones/PopulateContents()
-	switch (pickweight(list("egyptian" = 2, "clergy" = 3, "alien" = 1, "aztec" = 2,  "metaops" = 1)))
+	switch (pickweight(list("egyptian" = 1, "clergy" = 2, "alien" = 1, "aztec" = 2,  "adventurer" = 2)))
 	if("egyptian")
 			new /obj/item/nullrod/egyptian // egytr
 			new /obj/item/book/granter/spell/snake // ssssssss?
@@ -592,7 +592,12 @@
 			new /obj/item/clothing/under/abductor // i really dont know what to put for this
 			new /obj/item/gun/energy/decloner // it seems alien enough
 			new /obj/item/organ/heart/gland
-			new /obj/item/melee/synthetic_arm_blade // changelings are alien
+			new /obj/item/storage/backpack/holding
+	if("aztec")
+			new /obj/item/kitchen/knife/bloodletter
+			new	/obj/item/clothing/mask/rat/tribal
+			new /obj/item/clothing/suit/armor/bone
+			
 
 
 
