@@ -1840,6 +1840,14 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	item = /obj/item/storage/box/hug/reverse_revolver
 	restricted_roles = list("Clown")
 
+/datum/uplink_item/role_restricted/indianjones
+	name = "Villain Beacon"
+	desc = "if i forgot to do this bitch and tag me on discord"
+	cost = 15
+	item = /obj/item/storage/box/syndicate/indianjones
+	restricted_roles = list("Curator)
+
+
 // Pointless
 /datum/uplink_item/badass
 	category = "(Pointless) Badassery"
