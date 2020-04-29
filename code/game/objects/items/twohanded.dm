@@ -737,6 +737,14 @@
 		W.break_wall()
 		W.ScrapeAway(flags = CHANGETURF_INHERIT_AIR)
 		return
+		
+/obj/item/twohanded/pitchfork/trident
+	name = "Trident"
+	desc = "A Trident wielded by the last king of Atlantis."
+	force = 13
+	throwforce = 24
+	force_unwielded = 13
+	force_wielded = 22
 
 //HF blade
 
