@@ -618,7 +618,6 @@
 /obj/item/gun/ballistic/revolver/fortyfive
 	name = "\improper .45 Revolver"
 	desc = "An old model of revolver that originated in Unite States. Able to be suppressed. Uses .45mm ammo."
-	icon_state = "revolver"
 	can_suppress = TRUE
 
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/45
