@@ -579,18 +579,18 @@
 
 /obj/item/storage/box/syndicate/indianjones/PopulateContents()
 	switch (pickweight(list("egyptian" = 1, "clergy" = 2, "alien" = 1, "atlantis" = 1,  "adventurer" = 2)))
-	if("egyptian")
+		if("egyptian")
 			new /obj/item/gun/magic/staff/Snake
 			new /obj/item/melee/chainofcommand/tailwhip
 			new /obj/item/clothing/head/pharaoh
 	
-	if("clergy")
+		if("clergy")
 			new /obj/item/claymore/holy // sword
 			new /obj/item/clothing/head/helmet/chaplain(src)
 			new /obj/item/clothing/suit/armor/riot/chaplain(src)
 			new /obj/item/reagent_containers/glass/bottle/youth // like the eternal youth chalice from indiana jones
 	
-	if("alien")	
+		if("alien")	
 			new /obj/item/autosurgeon/node
 			new /obj/item/autosurgeon/spinner
 			new /obj/item/autosurgeon/plasmavessel
@@ -598,14 +598,14 @@
 			new /obj/item/clothing/mask/facehugger/toy
 			new /obj/item/clothing/mask/facehugger/toy
 			new /obj/item/clothing/suit/space/hardsuit/xenos
-
 	
-	if("atlantis")
+		if("atlantis")
 			new /obj/item/twohanded/pitchfork/trident
 			new	/obj/item/book/granter/spell/summonitem
 			new /obj/item/guardiancreator/carp
+			
 	
-	if("adventurer")
+		if("adventurer")
 			new /obj/item/gun/ballistic/revolver/45
 			new /obj/item/ammo_box/magazine/internal/cylinder/45
 			new /obj/item/ammo_box/magazine/internal/cylinder/45
