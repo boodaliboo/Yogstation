@@ -585,7 +585,7 @@
 			new /obj/item/clothing/head/pharaoh
 	
 	if("clergy")
-			new /obj/item/claymore // sword
+			new /obj/item/claymore/holy // sword
 			new /obj/item/clothing/head/helmet/chaplain(src)
 			new /obj/item/clothing/suit/armor/riot/chaplain(src)
 			new /obj/item/reagent_containers/glass/bottle/youth // like the eternal youth chalice from indiana jones
