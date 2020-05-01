@@ -617,7 +617,7 @@
 			
 			
 			
-/obj/item/gun/ballistic/revolver/45
+/obj/item/gun/ballistic/revolver/fortyfive
 	name = "\improper .45 Revolver"
 	desc = "An old model of revolver that originated in Unite States. Able to be suppressed. Uses .45mm ammo."
 	icon_state = "revolver"
