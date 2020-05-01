@@ -615,8 +615,6 @@
 			new /obj/item/reagent_containers/hypospray/medipen/survival
 			new /obj/item/reagent_containers/food/snacks/pizzaslice/goredem
 			
-			
-			
 /obj/item/gun/ballistic/revolver/fortyfive
 	name = "\improper .45 Revolver"
 	desc = "An old model of revolver that originated in Unite States. Able to be suppressed. Uses .45mm ammo."
