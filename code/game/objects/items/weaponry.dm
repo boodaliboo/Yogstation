@@ -202,6 +202,12 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 
 	name = new_name
 	playsound(user, 'sound/items/screwdriver2.ogg', 50, 1)
+	
+/obj/item/claymore/holy
+	name = "Holy Knights Claymore"
+	desc = "The claymore of a fallen holy knight, Deus Volt."
+	force = 45
+	throwforce = 20
 
 /obj/item/katana
 	name = "katana"
