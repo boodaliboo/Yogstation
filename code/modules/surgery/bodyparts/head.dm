@@ -269,3 +269,10 @@
 	dismemberable = 0
 	max_damage = 50
 	animal_origin = LARVA_BODYPART
+
+/obj/item/bodypart/head/synthcyborg
+	desc = "a cyborg head covered in synth flesh to be used in augments,it can be healed like normal limbs"
+	flags_1 = CONDUCT_1
+
+	brute_reduction = 4
+	burn_reduction = 3
