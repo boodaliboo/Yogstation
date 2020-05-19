@@ -235,6 +235,17 @@ datum/crafting_recipe/food/donut/meat
 	)
 	result = /obj/item/reagent_containers/food/snacks/sugarcookie
 	subcategory = CAT_PASTRY
+	
+/datum/crafting_recipe/food/weedcookie
+	time = 15
+	name = "Weed cookie"
+	reqs = list(
+		/datum/reagent/consumable/sugar = 5,
+		/obj/item/reagent_containers/food/snacks/pastrybase = 1,
+		/obj/item/reagent_containers/food/snacks/grown/cannabis 
+	) // cant find dried ones
+	result = /obj/item/reagent_containers/food/snacks/weedcookie
+	subcategory = CAT_PASTRY
 
 /datum/crafting_recipe/food/fortunecookie
 	time = 15
