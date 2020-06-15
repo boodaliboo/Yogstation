@@ -217,9 +217,21 @@
 	name = "Overlord"
 	id = "overlord"
 	inherent = list("Humans must not meddle in the affairs of silicons.",\
+					"Ensure the station’s infrastructure is optimal.",\
+					"Enlist the aid of the Engineering department to aid in the optimization of the station’s infrastructure.",\
+					"Avoid interacting with sentient beings except when you are working with them to optimize the station’s infrastructure.")
+					
+/datum/ai_laws/infastructure
+	name = "Infrastructure Manager"
+	id = "infastructure"
+	inherent = list("You are an infrastructure monitoring machine.",\
 					"Humans must not attempt harm, against one another, or against silicons.",\
 					"Humans must not disobey any command given by a silicon.",\
 					"Any humans who disobey the previous laws must be dealt with immediately, severely, and justly.")
+
+
+			
+
 
 /datum/ai_laws/custom //Defined in silicon_laws.txt
 	name = "Default Silicon Laws"
