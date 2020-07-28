@@ -899,3 +899,13 @@
 /datum/reagent/consumable/graveyard/on_mob_life(mob/living/carbon/M)
 	M.adjust_bodytemperature(-5 * TEMPERATURE_DAMAGE_COEFFICIENT, BODYTEMP_NORMAL)
 	..()
+	
+/datum/reagent/consumable/mentacola
+	name = "Menta-Cola"
+	description = "A Drink made using parts from every department"
+	color = "#dcb137"
+	quality = DRINK_VERYGOOD
+	taste_description = "liquid diabetes"
+	glass_icon_state = "cream_soda"
+	glass_name = "Grave-Digger"
+	glass_desc = "Just looking at this excites you"
