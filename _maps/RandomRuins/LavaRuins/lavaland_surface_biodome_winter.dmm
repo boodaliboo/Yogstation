@@ -175,10 +175,6 @@
 	initial_gas_mix = "o2=22;n2=82;TEMP=180"
 	},
 /area/ruin/powered/snow_biodome)
-"aL" = (
-/obj/structure/displaycase/captain,
-/turf/open/floor/wood,
-/area/ruin/powered/snow_biodome)
 "aM" = (
 /turf/open/floor/carpet,
 /area/ruin/powered/snow_biodome)
@@ -287,6 +283,11 @@
 "eg" = (
 /obj/machinery/vending/coffee,
 /turf/open/floor/pod/dark,
+/area/ruin/powered/snow_biodome)
+"el" = (
+/obj/structure/table/wood,
+/obj/item/grenade/gluon,
+/turf/open/floor/wood,
 /area/ruin/powered/snow_biodome)
 "gh" = (
 /obj/machinery/light/small{
@@ -792,7 +793,7 @@ bw
 at
 aD
 at
-aL
+at
 aq
 ak
 az
@@ -949,7 +950,7 @@ ah
 af
 aq
 ax
-aw
+el
 aF
 at
 at
