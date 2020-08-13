@@ -18,7 +18,7 @@
 	canSmoothWith = list()
 	smooth = SMOOTH_FALSE
 	/// The amount of time it takes to create a venus human trap, in deciseconds
-	var/growth_time = 1200
+	var/growth_time = 600
 
 /obj/structure/alien/resin/flower_bud_enemy/Initialize()
 	. = ..()
@@ -97,6 +97,7 @@
 	var/vine_grab_distance = 5
 	/// Whether or not this plant is ghost possessable
 	var/playable_plant = TRUE
+	sight = SEE_SELF|SEE_MOBS|SEE_OBJS|SEE_TURFS
 
 /mob/living/simple_animal/hostile/venus_human_trap/Life()
 	. = ..()
