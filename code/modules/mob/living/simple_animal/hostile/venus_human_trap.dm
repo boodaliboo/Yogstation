@@ -188,3 +188,15 @@
   */
 mob/living/simple_animal/hostile/venus_human_trap/proc/remove_vine(datum/beam/vine, force)
 	vines -= vine
+
+/mob/living/simple_animal/hostile/venus_human_trap/Initialize()
+	SSshuttle.registerHostileEnvironment(src) 
+	addtimer(CALLBACK(src, .proc/game_end), 30 MINUTES) 
+	for(var/mob/living/carbon/alien/humanoid/royal/queen/Q in GLOB.carbon_list)
+		if(Q == src)
+			continue
+		if(Q.stat == DEAD)
+			continue
+		if(Q.client)
+			name = "alien princess ([rand(1, 999)])"	//if this is too cutesy feel free to change it/remove it.
+			break
