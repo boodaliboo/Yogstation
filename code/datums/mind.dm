@@ -39,6 +39,7 @@
 
 	var/assigned_role
 	var/special_role
+	var/holy_role  =  NONE
 	var/list/restricted_roles = list()
 	var/list/datum/objective/objectives = list()
 
