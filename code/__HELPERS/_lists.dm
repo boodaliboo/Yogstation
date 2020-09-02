@@ -590,3 +590,11 @@
 			return FALSE
 
 	return TRUE
+
+/proc/is_sublist_assoc ( list / sub, list / main, datum / callback / predicate)
+	for ( var/ key  in sub)
+		if ( ! main [key] && sub [key])
+			return  FALSE
+		if ( ! predicate . Invoke (sub [key], main [key]))
+			return  FALSE
+	return  TRUE
