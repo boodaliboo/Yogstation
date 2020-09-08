@@ -133,13 +133,6 @@
 				var/obj/item/organ/tail/clockwork/organ = new()
 				organ.Insert(H, TRUE, FALSE)
 				return TRUE
-			if(ORGAN_SLOT_WINGS)
-				var/obj/item/organ/wings/cybernetic/clockwork/organ = new()
-				if(robustbits)
-					organ.flight_level = WINGS_FLYING
-				organ.Insert(H, TRUE, FALSE)
-				to_chat(H, "<span class='warning'>Your wings feel stiff.</span>")
-				return TRUE
 	if(replacebody)
 		for(var/obj/item/bodypart/O in H.bodyparts)
 			if(O.status == BODYPART_ROBOTIC)
@@ -288,15 +281,6 @@
 	organ_flags = ORGAN_SYNTHETIC
 	status = ORGAN_ROBOTIC
 
-
-/obj/item/organ/wings/cybernetic/clockwork
-	name = "biometallic wings"
-	desc = "A pair of thin metallic membranes."
-	flight_level = WINGS_FLIGHTLESS
-	wing_type = "Clockwork"
-	icon_state = "clockwings"
-	basewings = "moth_wings"
-	canopen = FALSE
 
 /obj/item/organ/tail/clockwork
 	name = "biomechanical tail"
