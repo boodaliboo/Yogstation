@@ -93,3 +93,8 @@
 	icon_state = "floursad"
 	desc = "Perhaps it shouldn't have been filled with water."
 	
+
+/obj/item/trash/gobstopper
+	name = "gobstopper"
+	icon_state = "gobstoppertrash"
+	
