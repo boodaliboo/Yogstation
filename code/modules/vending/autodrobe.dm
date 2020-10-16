@@ -183,6 +183,8 @@
 					/obj/item/clothing/head/yogs/sith_hood = 1,
 					/obj/item/clothing/neck/yogs/sith_cloak = 1,
 					/obj/item/clothing/suit/yogs/armor/sith_suit = 1,
+					/obj/item/clothing/suit/santa = 1,
+					/obj/item/clothing/head/santa = 1,
 					/obj/item/clothing/shoes/clown_shoes/beeshoes = 1) //yogs clothes for autodrobe end here
 	contraband = list(/obj/item/clothing/suit/judgerobe = 1,
 					  /obj/item/clothing/head/powdered_wig = 1,
