@@ -97,10 +97,6 @@
 /mob/living/simple_animal/hostile/poison/bees,
 /turf/open/floor/grass,
 /area/ruin/space/has_grav/abandonedzoo)
-"ao" = (
-/obj/structure/flora/ausbushes/lavendergrass,
-/turf/open/floor/grass,
-/area/ruin/space/has_grav/abandonedzoo)
 "ap" = (
 /mob/living/simple_animal/hostile/asteroid/goldgrub{
 	will_burrow = 0
@@ -166,10 +162,6 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark/side,
-/area/ruin/space/has_grav/abandonedzoo)
-"aA" = (
-/obj/structure/flora/ausbushes/ywflowers,
-/turf/open/floor/grass,
 /area/ruin/space/has_grav/abandonedzoo)
 "aB" = (
 /obj/machinery/light,
@@ -768,6 +760,11 @@
 "bX" = (
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/abandonedzoo)
+"fl" = (
+/obj/structure/flora/ausbushes/lavendergrass,
+/mob/living/simple_animal/hostile/jungle/seedling,
+/turf/open/floor/grass,
+/area/ruin/space/has_grav/abandonedzoo)
 "lo" = (
 /obj/machinery/door/airlock/external,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
@@ -788,6 +785,11 @@
 "rI" = (
 /obj/structure/flora/ausbushes/ppflowers,
 /mob/living/simple_animal/butterfly,
+/turf/open/floor/grass,
+/area/ruin/space/has_grav/abandonedzoo)
+"Ef" = (
+/obj/structure/flora/ausbushes/ywflowers,
+/mob/living/simple_animal/hostile/jungle/seedling,
 /turf/open/floor/grass,
 /area/ruin/space/has_grav/abandonedzoo)
 "Qz" = (
@@ -1085,7 +1087,7 @@ ac
 al
 an
 an
-aA
+Ef
 ac
 at
 aZ
@@ -1145,7 +1147,7 @@ bW
 "}
 (17,1,1) = {"
 ac
-ao
+fl
 an
 Rw
 rI
