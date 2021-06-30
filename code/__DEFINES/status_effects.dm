@@ -139,6 +139,8 @@
 
 #define STATUS_EFFECT_PROGENITORCURSE /datum/status_effect/progenitor_curse
 
+#define STATUS_EFFECT_STONED /datum/status_effect/stoned
+
 /////////////
 //  SLIME  //
 /////////////
