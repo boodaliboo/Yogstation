@@ -45,3 +45,10 @@
 	name = "Contraband Security HUD Implant"
 	desc = "A Cybersun Industries brand Security HUD Implant. These illicit cybernetic eye implants will display a security HUD over everything you see."
 	syndicate_implant = TRUE
+
+/obj/item/organ/cyberimp/eyes/hud/sensor
+	name = "Interdyne Sensor Field Visualizer"
+	desc = "This medical implant will allow you to see sensor signals of dead people that are nearby, very useful for paramedics."
+	HUD_type = DATA_HUD_SENSORS
+	HUD_trait = TRAIT_SENSOR_HUD
+	encode_info = AUGMENT_TG_LEVEL
